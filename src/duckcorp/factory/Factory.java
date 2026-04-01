@@ -173,7 +173,11 @@ public class Factory {
      * de 5 points.
      */
     public void endTurn() {
-        // TODO
-        throw new UnsupportedOperationException("TODO : Factory.endTurn()");
+        for (Machine machine : machines) {
+            machine.degrade();
+            if (machine.needsMaintenance()) {
+                this.reputation = Math.max(0, this.reputation - 5);
+            }
+        }
     }
 }
