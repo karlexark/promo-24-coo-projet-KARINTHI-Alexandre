@@ -24,3 +24,7 @@ Question (Ex4) : Expliquez pourquoi canBeFulfilled(Stock<Duck> stock) serait une
 
     avec Stock<? extends Duck>
     boolean possible2 = commande.canBeFulfilled(stockExclusifStandard); // ça compiler car StandardDuck est une sous classe de Duck
+
+Question ouverte (dans REPONSES.md) : Factory expose getMachines() qui retourne une List<Machine> non modifiable (via Collections.unmodifiableList()). Pourquoi ce choix ? Que se passerait-il si on retournait la liste interne directement ? Peut-on quand même modifier les machines elles-mêmes (via leurs méthodes) depuis l'extérieur ?
+
+    Oui on pourrait effectivement ajouter ou supprimer des machines alors que l'on ne devrait pas 
