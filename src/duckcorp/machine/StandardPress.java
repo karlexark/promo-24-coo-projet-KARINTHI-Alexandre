@@ -36,7 +36,7 @@ public class StandardPress extends Machine {
 
     @Override
     public String getName() {
-        return "Presse Standard";
+        return "Machine Standard";
     }
 
 
