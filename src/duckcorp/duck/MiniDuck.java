@@ -8,8 +8,23 @@ package duckcorp.duck;
  *   - Implémentez le constructeur MiniDuck(int qualityScore) avec un appel à super
  *   - Implémentez getBasePrice() et describe()
  * @author Roussille Philippe <roussille@3il.fr>
+ * @author Karinthi Alexandre <karintha@3il.fr>
  */
-public class MiniDuck {
+public class MiniDuck extends Duck {
 
     public static final double BASE_PRICE = 12.0;
+
+    public MiniDuck(int qualityScore) {
+        super(DuckType.MINI, qualityScore);
+    }
+
+    @Override
+    public double getBasePrice() {
+        return BASE_PRICE;
+    }
+
+    @Override
+    public String describe() {
+        return "Mini Canard";
+    }
 }
