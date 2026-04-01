@@ -6,6 +6,7 @@ package duckcorp.duck;
  * TODO (Ex1) :
  *   - Implémentez isDefective() et getQualityLabel() (méthodes default)
  * @author Roussille Philippe <roussille@3il.fr>
+ * @author Karinthi Alexandre <karintha@3il.fr>
  */
 public interface Qualifiable {
 
